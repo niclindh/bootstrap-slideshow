@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Slideshows</title>
+
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/s.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+
+  <h1>Bootstrap slideshow demo</h1>
+
+	<p>This page demonstrates a modified slideshow with captions and a slideshow in a shadowbox.</p>
+	<p>Overrides Bootstrap 3 to move the captions and indicators under the images and removes the shading from the carousel navigators.
+	<p>Hoping this will save somebody else some time.</p>
+	<p>All the action is in the stylesheet "css/s.css"</p>
+	<p>The images are Creative Commons license by <a href="http://niclindh.com">Nic Lindh</a>.</p>
+	<p>Dummy text from <a href="http://baconipsum.com/">Bacon Ipsum</a>.</p>
+
+  	      <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+				  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <img src="img/1.jpg" alt="...">
+			      <div class="carousel-caption">
+			        <p>Jowl t-bone capicola swine jerky. Ribeye bacon tongue chicken, pork loin sausage leberkas turkey meatball jowl strip steak short ribs shoulder. Ribeye boudin landjaeger drumstick brisket short loin. Pork belly turkey kevin strip steak sausage meatball andouille swine.</p>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="img/2.jpg" alt="...">
+			      <div class="carousel-caption">
+			        <p>Ribeye tri-tip doner chuck shoulder ham hock brisket jowl. Capicola meatloaf ball tip beef ribs bacon pork pastrami, tail strip steak chicken fatback flank short ribs pork loin. Ground round pork chop biltong shoulder. Chicken andouille venison, meatball pastrami prosciutto doner pork chop pig corned beef ribeye beef ribs bacon shoulder.</p>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="img/3.jpg" alt="...">
+			      <div class="carousel-caption">
+			        <p>Sirloin pork bacon boudin. Bresaola beef capicola, corned beef ribeye pig filet mignon leberkas pancetta frankfurter pork tail shank porchetta tenderloin. Andouille capicola bresaola tri-tip rump. Flank landjaeger doner ball tip bacon.</p>
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic1" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic1" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
+			</div><!-- carousel -->
+
+</div> <!-- col-md-12 -->
+<div class="col-md-12" style="padding-top: 20px;">
+
+    <!-- Shadowbox -->
+<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><h4>Click me to see a modal slideshow</h4></button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="slideshow" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+	      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <img src="img/4.jpg" alt="...">
+					 <div class="carousel-caption">
+					 <p>Bacon ipsum dolor sit amet frankfurter pork cow ham hock sirloin short ribs landjaeger, tenderloin hamburger venison. Hamburger drumstick cow bresaola frankfurter jowl ball tip chuck leberkas. Ham pork loin pork chop flank filet mignon. Shoulder flank prosciutto t-bone tongue pork loin doner ribeye pancetta. Pork belly landjaeger tri-tip leberkas bacon turkey pork loin salami porchetta.</p>
+
+
+      </div>
+			    </div>
+			    <div class="item">
+			      <img src="img/5.jpg" alt="...">
+			             <div class="carousel-caption">
+			             <p>Jowl t-bone capicola swine jerky. Ribeye bacon tongue chicken, pork loin sausage leberkas turkey meatball jowl strip steak short ribs shoulder. Ribeye boudin landjaeger drumstick brisket short loin. Pork belly turkey kevin strip steak sausage meatball andouille swine.</p>
+      </div>
+
+			    </div>
+			    <div class="item">
+			      <img src="img/6.jpg" alt="...">
+					<div class="carousel-caption">
+			             <p>Tri-tip ball tip filet mignon hamburger sausage, pork chop shoulder boudin prosciutto doner turducken brisket pork.</p>
+      </div>
+			    </div>
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
+			</div>
+
+    </div>
+  </div>
+  </div>
+
+</div> <!-- col-md-12 -->
+</div> <!-- row -->
+</div> <!-- container -->
+
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
